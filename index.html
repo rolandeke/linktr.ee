@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinedum Eke - Professional Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --dark-blue: #0d1b2a;
+      --medium-blue: #1b263b;
+      --light-blue: #415a77;
+      --off-white: #e0e1dd;
+      
+      --background: var(--off-white);
+      --text-color: var(--dark-blue);
+      --card-bg: white;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] {
+      --background: var(--dark-blue);
+      --text-color: var(--off-white);
+      --card-bg: var(--medium-blue);
+      --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      background-color: var(--card-bg);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow-color);
+      margin-bottom: 40px;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--medium-blue);
+      color: var(--off-white);
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 4px 10px var(--shadow-color);
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--light-blue);
+      margin-bottom: 20px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .profile-title {
+      font-size: 16px;
+      color: var(--light-blue);
+      margin-bottom: 15px;
+    }
+
+    .profile-bio {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .contact-info i {
+      color: var(--light-blue);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      background-color: var(--light-blue);
+      color: var(--off-white);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      gap: 10px;
+      box-shadow: 0 4px 8px var(--shadow-color);
+    }
+
+    .link-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px var(--shadow-color);
+      background-color: var(--medium-blue);
+    }
+
+    .link-btn i {
+      font-size: 20px;
+    }
+
+    .vcard-btn {
+      background-color: var(--dark-blue);
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--light-blue);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+    <i class="fas fa-moon"></i>
+  </button>
+  
+  <div class="container">
+    <div class="profile">
+      <img src="/api/placeholder/400/400" alt="Profile Photo" class="profile-img">
+      <h1 class="profile-name">John Doe</h1>
+      <h2 class="profile-title">Software Engineer & UI/UX Designer</h2>
+      <p class="profile-bio">
+        Passionate about creating beautiful and functional digital experiences. 
+        With over 8 years of experience in web development and design.
+      </p>
+    </div>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+      <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+      <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+    </div>
+
+    <div class="links">
+      <a href="https://linkedin.com/in/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://instagram.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://facebook.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://twitter.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i> Twitter (X)
+      </a>
+      <a href="https://wa.me/15551234567" class="link-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="#" class="link-btn vcard-btn" id="downloadVCard">
+        <i class="fas fa-address-card"></i> Download Contact Card
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 John Doe. All rights reserved.
+  </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    let currentTheme = localStorage.getItem('theme') || 'light';
+    
+    // Apply saved theme on page load
+    if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (currentTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        currentTheme = 'dark';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        currentTheme = 'light';
+      }
+      localStorage.setItem('theme', currentTheme);
+    });
+
+    // Create and download vCard functionality
+    document.getElementById('downloadVCard').addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Create vCard content
+      const vCard = `BEGIN:VCARD
+VERSION:3.0
+FN:Chinedum Eke
+N:Eke;Chinedum;;;
+TITLE:Software Engineer
+EMAIL:rolandeke49@gmail.com
+TEL;TYPE=CELL:+23278822683
+ADR;TYPE=WORK:;;Freetown;Freetown;;;Sierra Leone
+URL;TYPE=LinkedIn:https://linkedin.com/in/johndoe
+URL;TYPE=Instagram:https://instagram.com/johndoe
+URL;TYPE=Facebook:https://facebook.com/johndoe
+URL;TYPE=Twitter:https://twitter.com/johndoe
+END:VCARD`;
+      
+      // Create a Blob with the vCard data
+      const blob = new Blob([vCard], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      
+      // Create a temporary download link
+      const downloadLink = document.createElement('a');
+      downloadLink.href = url;
+      downloadLink.download = 'john_doe_contact.vcf';
+      
+      // Append to the document, click and remove
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+      
+      // Release the Blob URL
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
