@@ -159,7 +159,7 @@
     }
 
     footer {
-      margin-top: 30px;
+      margin-top: 20px;
       text-align: center;
       font-size: 14px;
       color: var(--light-blue);
@@ -184,34 +184,38 @@
   <div class="container">
     <div class="profile">
       <img src="/api/placeholder/400/400" alt="Profile Photo" class="profile-img">
-      <h1 class="profile-name">John Doe</h1>
-      <h2 class="profile-title">Software Engineer & UI/UX Designer</h2>
+      <h1 class="profile-name">Chinedum Roland Eke</h1>
+      <h2 class="profile-title">Software Engineer</h2>
       <p class="profile-bio">
-        Passionate about creating beautiful and functional digital experiences. 
-        With over 8 years of experience in web development and design.
+        A results-driven Software Engineer with 5+ years of experience in software development, web and 
+mobile application design, REST API development, and database management. Skilled in leveraging 
+modern technologies to create scalable solutions while excelling in team leadership, Agile 
+methodologies, and cloud infrastructure management. Proven ability to deliver high-quality software 
+solutions within deadlines and align with business goals
       </p>
     </div>
 
     <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
-      <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-      <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+      <p><i class="fas fa-envelope"></i> rolandeke49@gmail.com</p>
+      <p><i class="fas fa-envelope"></i> chinedum.eke@imo-tech.com</p>
+      <p><i class="fas fa-phone"></i> +23278822683</p>
+      <p><i class="fas fa-map-marker-alt"></i> Western Urban, Freetown</p>
     </div>
 
     <div class="links">
-      <a href="https://linkedin.com/in/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/chinedum-roland-eke-8a8904184/" class="link-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin"></i> LinkedIn
       </a>
-      <a href="https://instagram.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://instagram.com/crolandeke" class="link-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-instagram"></i> Instagram
       </a>
-      <a href="https://facebook.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://facebook.com/roland.eke.7" class="link-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-facebook"></i> Facebook
       </a>
-      <a href="https://twitter.com/johndoe" class="link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://twitter.com/EkeRoland" class="link-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-twitter"></i> Twitter (X)
       </a>
-      <a href="https://wa.me/15551234567" class="link-btn" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/23278822683" class="link-btn" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
       <a href="#" class="link-btn vcard-btn" id="downloadVCard">
@@ -221,7 +225,7 @@
   </div>
 
   <footer>
-    &copy; 2025 John Doe. All rights reserved.
+    &copy; 2025 Chinedum Roland Eke. All rights reserved.
   </footer>
 
   <script>
@@ -256,16 +260,18 @@
       // Create vCard content
       const vCard = `BEGIN:VCARD
 VERSION:3.0
-FN:Chinedum Eke
-N:Eke;Chinedum;;;
-TITLE:Software Engineer
-EMAIL:rolandeke49@gmail.com
-TEL;TYPE=CELL:+23278822683
-ADR;TYPE=WORK:;;Freetown;Freetown;;;Sierra Leone
-URL;TYPE=LinkedIn:https://linkedin.com/in/johndoe
-URL;TYPE=Instagram:https://instagram.com/johndoe
-URL;TYPE=Facebook:https://facebook.com/johndoe
-URL;TYPE=Twitter:https://twitter.com/johndoe
+PRODID:-//Apple Inc.//iPhone OS 18.4//EN
+N:Eke;Chinedum Roland;;;
+FN:Chinedum Roland Eke
+ORG:IMO TECH SOLUTIONS;
+EMAIL;type=INTERNET;type=HOME;type=pref:rolandeke49@gmail.com
+EMAIL;type=INTERNET;type=WORK:chinedum.eke@imo-tech.com
+TEL;type=HOME;type=VOICE;type=pref:+23299822683
+TEL;type=CELL;type=VOICE:+23278822683
+X-SOCIALPROFILE;type=FACEBOOK;x-user=CHINEDUM ROLAND EKE:https://facebook.com/Chinedum%20Roland%20Eke
+X-SOCIALPROFILE;type=TWITTER;x-user=EKEROLAND:https://twitter.com/EkeRoland
+X-SOCIALPROFILE;type=WHATSAPP;x-user=+23278822683:x-apple:+23278822683
+BDAY:1998-06-01
 END:VCARD`;
       
       // Create a Blob with the vCard data
@@ -275,7 +281,7 @@ END:VCARD`;
       // Create a temporary download link
       const downloadLink = document.createElement('a');
       downloadLink.href = url;
-      downloadLink.download = 'john_doe_contact.vcf';
+      downloadLink.download = 'roland_eke.vcf';
       
       // Append to the document, click and remove
       document.body.appendChild(downloadLink);
